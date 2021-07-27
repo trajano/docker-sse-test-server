@@ -48,12 +48,12 @@ sse_test_page = """
 """
 
 
-@get('/')
+@get('/sse/')
 def index():
 	return sse_test_page
 
 
-@get('/stream')
+@get('/sse/stream')
 def stream():
 	# "Using server-sent events"
 	# https://developer.mozilla.org/en-US/docs/Server-sent_events/Using_server-sent_events
