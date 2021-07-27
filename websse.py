@@ -77,4 +77,4 @@ def stream():
 
 
 if __name__ == '__main__':
-	run(server=GeventServer)
+	run(server=GeventServer, host='0.0.0.0', port=8080)
